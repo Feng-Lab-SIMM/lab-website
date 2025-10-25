@@ -9,27 +9,8 @@ design:
   spacing: '6rem'
 
 sections:
-  - block: resume-biography-3
-    content:
-      # Choose a user profile to display (a folder name within `content/authors/`)
-      username: admin
-      text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/resume.pdf
-      headings:
-        about: ''
-        education: ''
-        interests: ''
-    design:
-      # Apply a gradient background
-      css_class: hbx-bg-gradient
-      # Avatar customization
-      avatar:
-        size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
-        shape: circle # Options: circle (default), square, rounded
   - block: markdown
+    id: about
     content:
       title: '📚 My Research'
       subtitle: ''
@@ -40,9 +21,10 @@ sections:
 
         Please reach out to collaborate 😃
     design:
+      css_class: hbx-bg-gradient
       columns: '1'
   - block: collection
-    id: papers
+    id: research
     content:
       title: Featured Publications
       filters:
@@ -53,6 +35,7 @@ sections:
       view: article-grid
       columns: 2
   - block: collection
+    id: publications
     content:
       title: Recent Publications
       text: ''
@@ -63,24 +46,15 @@ sections:
     design:
       view: citation
   - block: collection
-    id: talks
+    id: events
     content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
+      title: Recent Events
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
-      page_type: blog
+      page_type: events
       # Choose how many pages you would like to display (0 = all pages)
-      count: 5
+      count: 3
       # Filter on criteria
       filters:
         author: ''
@@ -100,6 +74,14 @@ sections:
       # Reduce spacing
       spacing:
         padding: [0, 0, 0, 0]
+  - block: markdown
+    content:
+      title: 'Contact Us'
+      subtitle: ''
+      text: |-
+        visit, connect
+    design:
+      columns: '1'
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
