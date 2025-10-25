@@ -9,20 +9,29 @@ design:
   spacing: '6rem'
 
 sections:
-  - block: markdown
+  - block: hero
     id: about
     content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
-
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-
-        Please reach out to collaborate 😃
+      title: 'Research Lab for Advancing Science'
+      text: 'We are a leading research group focused on pushing the boundaries of knowledge through innovative research and collaboration. Our multidisciplinary team works on cutting-edge projects at the intersection of technology and science.'
+      primary_action:
+        text: 'Get Started'
+        url: 'https://example.com'
+        icon: 'sparkles'
+      secondary_action:
+        text: 'Learn More'
+        url: 'https://docs.hugoblox.com'
+      announcement:
+        text: 'We are hiring PhD students and postdocs!'
+        link:
+          text: 'Contact us'
+          url: '/contact/'
     design:
-      css_class: hbx-bg-gradient
-      columns: '1'
+      background:
+        color: '#45706e'
+        gradient_start: '#4f46e5'
+        gradient_end: '#7c3aed'
+        text_color_light: true
   - block: collection
     id: research
     content:
